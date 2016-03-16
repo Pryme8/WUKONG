@@ -230,6 +230,52 @@ WUKONG.PREFABS = {
 				methods : "//Methods - copy(id) -> Geometry"
 				},	
 			},
+		CreateTube: {
+				data :{
+				string: "var ribArray = [[new BABYLON.Vector3(-10, 0, 5), new BABYLON.Vector3(10, 0, 5)],[new BABYLON.Vector3(-10, 0, -5), new BABYLON.Vector3(10, 0, -5)]]; \r\n <BR />"+
+						"BABYLON.Mesh.CreateRibbon('ribbon', ribArray, false, false, 0, scene, false, BABYLON.Mesh.DEFAULTSIDE);",
+				hints : "//Ribbon(id, scene, pathArray, closeArray, closePath, offset, canBeRegenerated, mesh, side)",
+				members : "//Members - pathArray : Vector3[][], closeArray : boolean, closePath : boolean, offset : number, side : number, ",
+				methods : "//Methods - copy(id) -> Geometry"
+				},	
+			},	
+		DisplaySettings : {
+			SideOrentation :{
+				MeshFRONTSIDE	 : {
+					data :{
+					string: "BABYLON.Mesh.FRONTSIDE",
+					hints : null,
+					members : null,
+					methods : null,
+					},	
+				},
+				MeshBACKSIDE	 : {
+					data :{
+					string: "BABYLON.Mesh.BACKSIDE",
+					hints : null,
+					members : null,
+					methods : null,
+					},	
+				},
+				MeshDOUBLESIDE	 : {
+					data :{
+					string: "BABYLON.Mesh.DOUBLESIDE",
+					hints : null,
+					members : null,
+					methods : null,
+					},	
+				},
+				MeshDEFAULTSIDE	 : {
+					data :{
+					string: "BABYLON.Mesh.DEFAULTSIDE",
+					hints : null,
+					members : null,
+					methods : null,
+					},	
+				}
+			}, //END SIDE ORIENTATION
+		}
+		
 		
 	},
 	Cameras :{
