@@ -164,12 +164,18 @@ WUKONG.PREFABS = {
 			ArcRotateStandard :{
 				data :{
 				string: "new ArcRotateCamera(name, alpha, beta, radius, target, scene);",
-				hints : "//ArcRotateCamera(name, alpha, beta, radius, target, scene) \n\r<BR/>",
-				members : "//Members - alpha : number, beta : number, radius : number, target : any, inertialAlphaOffset : number, inertialBetaOffset : number, inertialRadiusOffset : number, lowerAlphaLimit : any, upperAlphaLimit : any, lowerBetaLimit : number, upperBetaLimit : number, lowerRadiusLimit : any, upperRadiusLimit : any, angularSensibilityX : number, angularSensibilityY : number, wheelPrecision : number, pinchPrecision : number, panningSensibility : number, inertialPanningX : number, inertialPanningY : number, keysUp : number[], keysDown : number[], keysLeft : number[], keysRight : number[], zoomOnFactor : number, targetScreenOffset : Vector2, pinchInwards : boolean, allowUpsideDown : boolean, panningAxis : Vector3, onCollide : (collidedMesh: AbstractMesh) => void, checkCollisions : boolean, collisionRadius : Vector3, angularSensibility : number \n\r<BR/>",
+				hints : "//ArcRotateCamera(name, alpha, beta, radius, target, scene)",
+				members : "//Members - alpha : number, beta : number, radius : number, target : any, inertialAlphaOffset : number, inertialBetaOffset : number, inertialRadiusOffset : number, lowerAlphaLimit : any, upperAlphaLimit : any, lowerBetaLimit : number, upperBetaLimit : number, lowerRadiusLimit : any, upperRadiusLimit : any, angularSensibilityX : number, angularSensibilityY : number, wheelPrecision : number, pinchPrecision : number, panningSensibility : number, inertialPanningX : number, inertialPanningY : number, keysUp : number[], keysDown : number[], keysLeft : number[], keysRight : number[], zoomOnFactor : number, targetScreenOffset : Vector2, pinchInwards : boolean, allowUpsideDown : boolean, panningAxis : Vector3, onCollide : (collidedMesh: AbstractMesh) => void, checkCollisions : boolean, collisionRadius : Vector3, angularSensibility : number",
 				methods : "//Methods - attachControl(element, noPreventDefault, useCtrlForPanning) -> void, detachControl(element) -> void, setPosition(position) -> void, setTarget(target) → void, zoomOn(meshes, doNotUpdateMaxZ) -> void, focusOn(meshesOrMinMaxVectorAndDistance, doNotUpdateMaxZ) -> void, createRigCamera(name, cameraIndex) -> Camera, serialize() -> any",
 				}
 			},
 			TouchStandard : {
+				data :{
+				string: "new TouchCamera(name, position, scene);",
+				hints : "//TouchCamera(name, position, scene)",
+				members : "//Members - touchAngularSensibility : number, touchMoveSensibility : number",
+				methods : "//Methods - attachControl(canvas, noPreventDefault) -> void, detachControl(canvas) -> void",
+				}
 			},
 			DeviceOStandard : {
 			},
