@@ -196,6 +196,14 @@ WUKONG.PREFABS = {
 				members : "//Members - diameter : number, thickness : number, tessellation : number, side : number",
 				methods : "//Methods - copy(id) -> Geometry, serialize() -> any, static Parse(parsedTorus, scene) -> Torus"
 				}
+		},
+		CreateTorusKnot : {
+			data :{
+				string: "BABYLON.Mesh.CreateTorusKnot('knot', 2, 0.5, 128, 64, 2, 3, scene, false, BABYLON.Mesh.DEFAULTSIDE);",
+				hints : "//TorusKnot(id, scene, radius, tube, radialSegments, tubularSegments, p, q, canBeRegenerated, mesh, side)",
+				members : "//Members - radius : number, tube : number, radialSegments : number, tubularSegments : number, p : number, q : number, side : number",
+				methods : "//Methods - copy(id) -> Geometry, serialize() -> any, static Parse(parsedTorusKnot, scene) -> TorusKnot"
+				}
 		}
 		
 	},
