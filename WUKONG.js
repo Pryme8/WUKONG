@@ -149,6 +149,30 @@ WUKONG.PREFABS = {
 		}
 	},
 	Basics : {
+		CreateBox : {
+			data :{
+				string: "BABYLON.Mesh.CreateBox('box', 6.0, scene, false, BABYLON.Mesh.DEFAULTSIDE);",
+				hints : "//Box(id, scene, size, canBeRegenerated, mesh, side)",
+				members : "//Members - size : number, side : number",
+				methods : "//Methods - copy(id) -> Geometry, serialize() -> any, static Parse(parsedBox, scene) -> Box"
+				}
+		},
+		CreateSphere : {
+			data :{
+				string: "BABYLON.Mesh.CreateSphere('sphere', 10.0, 10.0, scene, false,  BABYLON.Mesh.DEFAULTSIDE);",
+				hints : "//Sphere(id, scene, segments, diameter, canBeRegenerated, mesh, side)",
+				members : "//Members - segments : number, diameter : number, side : number",
+				methods : "//Methods - copy(id) -> Geometry, serialize() -> any, static Parse(parsedSphere, scene) -> Sphere"
+				}
+		},
+		CreatePlane : {
+			data :{
+				string: "BABYLON.Mesh.CreatePlane('plane', 10.0, scene, false, BABYLON.Mesh.DEFAULTSIDE);",
+				hints : "//Plane(id, scene, size, canBeRegenerated, mesh, side)",
+				members : "//Members - size : number, side : number",
+				methods : "//Methods - copy(id) -> Geometry, serialize() -> any, static Parse(parsedPlane, scene) -> Plane"
+				}
+		}
 		
 	},
 	Cameras :{
