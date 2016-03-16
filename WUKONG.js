@@ -178,6 +178,12 @@ WUKONG.PREFABS = {
 				}
 			},
 			DeviceOStandard : {
+				data :{
+				string: "new DeviceOrientationCamera(name, position, scene);",
+				hints : "//DeviceOrientationCamera(name, position, scene)",
+				members : "//Members - angularSensibility : number, moveSensibility : number",
+				methods : "//Methods - attachControl(canvas, noPreventDefault) -> void, detachControl(canvas) -> void",
+				}
 			},
 			FollowStandard:{
 			},
