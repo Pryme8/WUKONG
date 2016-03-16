@@ -246,6 +246,14 @@ WUKONG.PREFABS = {
 				methods : "//Methods - getAbsolutePosition() -> Vector3, setDirectionToTarget(target) -> Vector3, setShadowProjectionMatrix(matrix, viewMatrix, renderList) -> void, supportsVSM() -> boolean, needRefreshPerFrame() -> boolean, needCube() -> boolean, getShadowDirection(faceIndex) -> Vector3, computeTransformedPosition() -> boolean, transferToEffect(effect, directionUniformName) -> void, serialize() -> any",
 				}
 		},
+		SpotLight : {
+			data :{
+				string: "new SpotLight(name, position, direction, angle, exponent, scene);",
+				hints : "//SpotLight(name, position, direction, angle, exponent, scene)",
+				members : "//Members - position : Vector3, direction : Vector3, angle : number, exponent : number, transformedPosition : Vector3",
+				methods : "//Methods - getAbsolutePosition() -> Vector3, setShadowProjectionMatrix(matrix, viewMatrix, renderList) -> void, needCube() -> boolean, supportsVSM() -> boolean, needRefreshPerFrame() -> boolean, getShadowDirection(faceIndex) -> Vector3, setDirectionToTarget(target) -> Vector3, computeTransformedPosition() -> boolean, transferToEffect(effect, positionUniformName, directionUniformName) -> void, serialize() -> any",
+				}
+		},
 	}
 	
 }
