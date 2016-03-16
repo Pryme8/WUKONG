@@ -200,7 +200,15 @@ WUKONG.PREFABS = {
 				members : "//Members - None",
 				methods : "//Methods - getLeftJoystick() -> VirtualJoystick, getRightJoystick() -> VirtualJoystick, dispose() -> void",
 				}
-			}
+			},
+			GamepadStandard :{
+				data :{
+				string: "new GamepadCamera(name, position, scene);",
+				hints : "//GamepadCamera(name, position, scene)",
+				members : "//Members - angularSensibility : number, moveSensibility : number",
+				methods : "//Methods - dispose() -> void",
+				}
+			},
 		},
 		Anaglyph:{
 			FreeAnaglyph :{
@@ -212,13 +220,14 @@ WUKONG.PREFABS = {
 				}
 			},
 			ArcRotateAnaglyph :{
+				data :{
+				string: "new AnaglyphArcRotateCamera(name, alpha, beta, radius, target, interaxialDistance, scene);",
+				hints : "//AnaglyphArcRotateCamera(name, alpha, beta, radius, target, interaxialDistance, scene)",
+				members : "//Members - None",
+				methods : "//Methods - None",
+				}
 			}	
-		},
-		Gamepad :{
-		},
-		VRDevice : {
-		}
-		
+		},		
 	}
 	
 }
