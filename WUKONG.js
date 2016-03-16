@@ -172,6 +172,14 @@ WUKONG.PREFABS = {
 				members : "//Members - size : number, side : number",
 				methods : "//Methods - copy(id) -> Geometry, serialize() -> any, static Parse(parsedPlane, scene) -> Plane"
 				}
+		},
+		CreateDisc : {
+			data :{
+				string: "BABYLON.Mesh.CreateDisc('disc', 5, 30, scene, false, BABYLON.Mesh.DEFAULTSIDE);",
+				hints : "//Disc(id, scene, radius, tessellation, canBeRegenerated, mesh, side)",
+				members : "//Members - radius : number, tessellation : number, side : number",
+				methods : "//Methods - copy(id) -> Geometry"
+				}
 		}
 		
 	},
