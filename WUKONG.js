@@ -15,7 +15,7 @@ WUKONG.prototype._init = function(){
 	$("head").append("<link href='http://pryme8.github.io/WUKONG/WUKONG.css' type='text/css' rel='stylesheet' />");
 	var buttonHTML = 	"<span id='WUKONG_BUTTON'>WUKONG</span>"+
 						"<ul id='WUKONG_LIST'>";
-		buttonHTML += "<li><input type='checkbox' id='hints' />&frasl;h<input type='checkbox' id='members' />&frasl;mb<input type='checkbox' id='methods' />&frasl;md</li>";
+		buttonHTML += "<li><input type='checkbox' id='hints' checked />&frasl;h<input type='checkbox' id='members' />&frasl;mb<input type='checkbox' id='methods' />&frasl;md</li>";
 	
 	
 		function buildList(target){
@@ -188,5 +188,5 @@ WUKONG.PREFABS = {
 
 
 $(document).ready(function(e) {
-   if(!WU){ WU = new WUKONG();}
+ WU = new WUKONG();
 });
