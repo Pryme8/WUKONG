@@ -204,6 +204,7 @@ WUKONG.PREFABS = {
 				members : "//Members - radius : number, tube : number, radialSegments : number, tubularSegments : number, p : number, q : number, side : number",
 				methods : "//Methods - copy(id) -> Geometry, serialize() -> any, static Parse(parsedTorusKnot, scene) -> TorusKnot"
 				},
+		},
 		Lines : {
 			BasicLine : {
 				data :{
@@ -228,10 +229,7 @@ WUKONG.PREFABS = {
 				members : "//Members - pathArray : Vector3[][], closeArray : boolean, closePath : boolean, offset : number, side : number, ",
 				methods : "//Methods - copy(id) -> Geometry"
 				},	
-			}
-		
-		
-		}
+			},
 		
 	},
 	Cameras :{
