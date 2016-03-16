@@ -204,6 +204,12 @@ WUKONG.PREFABS = {
 		},
 		Anaglyph:{
 			FreeAnaglyph :{
+				data :{
+				string: "new AnaglyphFreeCamera(name, position, interaxialDistance, scene);",
+				hints : "//AnaglyphFreeCamera(name, position, interaxialDistance, scene)",
+				members : "//Members - interaxialDistance : number",
+				methods : "//Methods - None",
+				}
 			},
 			ArcRotateAnaglyph :{
 			}	
