@@ -189,11 +189,17 @@ WUKONG.PREFABS = {
 				data :{
 				string: "new FollowCamera(name, position, scene);",
 				hints : "//FollowCamera(name, position, scene)",
-				members : "//Members - radius : number, rotationOffset : number, heightOffset : number, cameraAcceleration : number, maxCameraSpeed : number, target : AbstractMesh,",
+				members : "//Members - radius : number, rotationOffset : number, heightOffset : number, cameraAcceleration : number, maxCameraSpeed : number, target : AbstractMesh",
 				methods : "//Methods - serialize() -> any",
 				}
 			},
 			VirtualJoyStandard:{
+				data :{
+				string: "new VirtualJoysticksCamera(name, position, scene);",
+				hints : "//VirtualJoysticksCamera(name, position, scene)",
+				members : "//Members - None",
+				methods : "//Methods - getLeftJoystick() -> VirtualJoystick, getRightJoystick() -> VirtualJoystick, dispose() -> void",
+				}
 			}
 		},
 		Anaglyph:{
