@@ -68,11 +68,20 @@ WUKONG.prototype._init = function(){
 
 WUKONG.prototype._copyPrefab = function(prefab){
 	if(prefab!=null){
-			var string = String(prefab.data.hints)+'\n\r<BR />'+String(prefab.data.string);
-    			console.log(string);
+			var string = "";
+			if(prefab.data.hints && $('#WUKONG #hints').is(':checked')){
+				string += String(prefab.data.hints)+'\n\r<BR />';
+			}
+			if(prefab.data.members && $('#WUKONG #members').is(':checked')){
+				string += String(prefab.data.members)+'\n\r<BR />';
+			}
+			if(prefab.data.methods && $('#WUKONG #methods').is(':checked')){
+				string += String(prefab.data.methods)+'\n\r<BR />';
+			}
+			string += String(prefab.data.string);
+			
 				$("#WUKONG").find('copy').html(string);
-				
-		
+	
 			  var element = $("#WUKONG").find('copy')[0];  
   				var range = document.createRange();  
  				range.selectNode(element);  
@@ -81,7 +90,7 @@ WUKONG.prototype._copyPrefab = function(prefab){
     				// Now that we've selected the anchor text, execute the copy command  
     				var successful = document.execCommand('copy');  
     				var msg = successful ? 'successful' : 'unsuccessful';  
-    				console.log('Copy email command was ' + msg);  
+    				console.log('Copy command was ' + msg);  
   				} catch(err) {  
    					 console.log('Oops, unable to copy');  
  				 }  
