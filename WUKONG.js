@@ -186,6 +186,12 @@ WUKONG.PREFABS = {
 				}
 			},
 			FollowStandard:{
+				data :{
+				string: "new FollowCamera(name, position, scene);",
+				hints : "//FollowCamera(name, position, scene)",
+				members : "//Members - radius : number, rotationOffset : number, heightOffset : number, cameraAcceleration : number, maxCameraSpeed : number, target : AbstractMesh,",
+				methods : "//Methods - serialize() -> any",
+				}
 			},
 			VirtualJoyStandard:{
 			}
