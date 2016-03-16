@@ -180,6 +180,14 @@ WUKONG.PREFABS = {
 				members : "//Members - radius : number, tessellation : number, side : number",
 				methods : "//Methods - copy(id) -> Geometry"
 				}
+		},
+		CreateCylinder : {
+			data :{
+				string: "BABYLON.Mesh.CreateCylinder('cylinder', 3, 3, 3, 6, 1, scene, false, BABYLON.Mesh.DEFAULTSIDE);",
+				hints : "//Cylinder(id, scene, height, diameterTop, diameterBottom, tessellation, subdivisions, canBeRegenerated, mesh, side)",
+				members : "//Members - height : number, diameterTop : number, diameterBottom : number, tessellation : number, subdivisions : number, side : number",
+				methods : "//Methods - copy(id) -> Geometry, serialize() -> any, static Parse(parsedCylinder, scene) -> Cylinder"
+				}
 		}
 		
 	},
