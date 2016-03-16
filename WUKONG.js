@@ -155,7 +155,7 @@ WUKONG.PREFABS = {
 		Standard :{
 			FreeStandard :{
 				data :{
-				string: "new FreeCamera(name, position, scene);",
+				string: "new BABYLON.FreeCamera(name, position, scene);",
 				hints : "//FreeCamera(name,position,scene)",
 				members : "//Members - ellipsoid : Vector3, keysUp : number[], keysDown : number[], keysLeft : number[], keysRight : number[], checkCollisions : boolean, applyGravity : boolean, angularSensibility : number, onCollide : (collidedMesh: AbstractMesh) => void",
 				methods : "//Methods - attachControl(element, noPreventDefault) => void, detachControl(element) => void, serialize() => any"
@@ -163,7 +163,7 @@ WUKONG.PREFABS = {
 			},
 			ArcRotateStandard :{
 				data :{
-				string: "new ArcRotateCamera(name, alpha, beta, radius, target, scene);",
+				string: "new BABYLON.ArcRotateCamera(name, alpha, beta, radius, target, scene);",
 				hints : "//ArcRotateCamera(name, alpha, beta, radius, target, scene)",
 				members : "//Members - alpha : number, beta : number, radius : number, target : any, inertialAlphaOffset : number, inertialBetaOffset : number, inertialRadiusOffset : number, lowerAlphaLimit : any, upperAlphaLimit : any, lowerBetaLimit : number, upperBetaLimit : number, lowerRadiusLimit : any, upperRadiusLimit : any, angularSensibilityX : number, angularSensibilityY : number, wheelPrecision : number, pinchPrecision : number, panningSensibility : number, inertialPanningX : number, inertialPanningY : number, keysUp : number[], keysDown : number[], keysLeft : number[], keysRight : number[], zoomOnFactor : number, targetScreenOffset : Vector2, pinchInwards : boolean, allowUpsideDown : boolean, panningAxis : Vector3, onCollide : (collidedMesh: AbstractMesh) => void, checkCollisions : boolean, collisionRadius : Vector3, angularSensibility : number",
 				methods : "//Methods - attachControl(element, noPreventDefault, useCtrlForPanning) -> void, detachControl(element) -> void, setPosition(position) -> void, setTarget(target) → void, zoomOn(meshes, doNotUpdateMaxZ) -> void, focusOn(meshesOrMinMaxVectorAndDistance, doNotUpdateMaxZ) -> void, createRigCamera(name, cameraIndex) -> Camera, serialize() -> any",
@@ -171,7 +171,7 @@ WUKONG.PREFABS = {
 			},
 			TouchStandard : {
 				data :{
-				string: "new TouchCamera(name, position, scene);",
+				string: "new BABYLON.TouchCamera(name, position, scene);",
 				hints : "//TouchCamera(name, position, scene)",
 				members : "//Members - touchAngularSensibility : number, touchMoveSensibility : number",
 				methods : "//Methods - attachControl(canvas, noPreventDefault) -> void, detachControl(canvas) -> void",
@@ -187,7 +187,7 @@ WUKONG.PREFABS = {
 			},
 			FollowStandard:{
 				data :{
-				string: "new FollowCamera(name, position, scene);",
+				string: "new BABYLON.FollowCamera(name, position, scene);",
 				hints : "//FollowCamera(name, position, scene)",
 				members : "//Members - radius : number, rotationOffset : number, heightOffset : number, cameraAcceleration : number, maxCameraSpeed : number, target : AbstractMesh",
 				methods : "//Methods - serialize() -> any",
@@ -195,7 +195,7 @@ WUKONG.PREFABS = {
 			},
 			VirtualJoyStandard:{
 				data :{
-				string: "new VirtualJoysticksCamera(name, position, scene);",
+				string: "new BABYLON.VirtualJoysticksCamera(name, position, scene);",
 				hints : "//VirtualJoysticksCamera(name, position, scene)",
 				members : "//Members - None",
 				methods : "//Methods - getLeftJoystick() -> VirtualJoystick, getRightJoystick() -> VirtualJoystick, dispose() -> void",
@@ -203,7 +203,7 @@ WUKONG.PREFABS = {
 			},
 			GamepadStandard :{
 				data :{
-				string: "new GamepadCamera(name, position, scene);",
+				string: "new BABYLON.GamepadCamera(name, position, scene);",
 				hints : "//GamepadCamera(name, position, scene)",
 				members : "//Members - angularSensibility : number, moveSensibility : number",
 				methods : "//Methods - dispose() -> void",
@@ -213,7 +213,7 @@ WUKONG.PREFABS = {
 		Anaglyph:{
 			FreeAnaglyph :{
 				data :{
-				string: "new AnaglyphFreeCamera(name, position, interaxialDistance, scene);",
+				string: "new BABYLON.AnaglyphFreeCamera(name, position, interaxialDistance, scene);",
 				hints : "//AnaglyphFreeCamera(name, position, interaxialDistance, scene)",
 				members : "//Members - interaxialDistance : number",
 				methods : "//Methods - None",
@@ -221,7 +221,7 @@ WUKONG.PREFABS = {
 			},
 			ArcRotateAnaglyph :{
 				data :{
-				string: "new AnaglyphArcRotateCamera(name, alpha, beta, radius, target, interaxialDistance, scene);",
+				string: "new BABYLON.AnaglyphArcRotateCamera(name, alpha, beta, radius, target, interaxialDistance, scene);",
 				hints : "//AnaglyphArcRotateCamera(name, alpha, beta, radius, target, interaxialDistance, scene)",
 				members : "//Members - None",
 				methods : "//Methods - None",
@@ -232,7 +232,7 @@ WUKONG.PREFABS = {
 	Lights : {
 		PointLight : {
 			data :{
-				string: "new PointLight(name, position, scene);",
+				string: "new BABYLON.PointLight(name, position, scene);",
 				hints : "//PointLight(name, position, scene)",
 				members : "//Members - position : Vector3",
 				methods : "//Methods - getAbsolutePosition() -> Vector3, computeTransformedPosition() -> boolean, transferToEffect(effect, positionUniformName) -> void, needCube() -> boolean, supportsVSM() -> boolean, needRefreshPerFrame() -> boolean, getShadowDirection(faceIndex) -> Vector3, setShadowProjectionMatrix(matrix, viewMatrix, renderList) -> void,se rialize() -> any",
@@ -240,7 +240,7 @@ WUKONG.PREFABS = {
 		},
 		DirectionalLight : {
 			data :{
-				string: "new DirectionalLight(name, direction, scene);",
+				string: "new BABYLON.DirectionalLight(name, direction, scene);",
 				hints : "//DirectionalLight(name, direction, scene)",
 				members : "//Members - direction : Vector3, position : Vector3, transformedPosition : Vector3, shadowOrthoScale : number, autoUpdateExtends : boolean",
 				methods : "//Methods - getAbsolutePosition() -> Vector3, setDirectionToTarget(target) -> Vector3, setShadowProjectionMatrix(matrix, viewMatrix, renderList) -> void, supportsVSM() -> boolean, needRefreshPerFrame() -> boolean, needCube() -> boolean, getShadowDirection(faceIndex) -> Vector3, computeTransformedPosition() -> boolean, transferToEffect(effect, directionUniformName) -> void, serialize() -> any",
@@ -248,7 +248,7 @@ WUKONG.PREFABS = {
 		},
 		SpotLight : {
 			data :{
-				string: "new SpotLight(name, position, direction, angle, exponent, scene);",
+				string: "new BABYLON.SpotLight(name, position, direction, angle, exponent, scene);",
 				hints : "//SpotLight(name, position, direction, angle, exponent, scene)",
 				members : "//Members - position : Vector3, direction : Vector3, angle : number, exponent : number, transformedPosition : Vector3",
 				methods : "//Methods - getAbsolutePosition() -> Vector3, setShadowProjectionMatrix(matrix, viewMatrix, renderList) -> void, needCube() -> boolean, supportsVSM() -> boolean, needRefreshPerFrame() -> boolean, getShadowDirection(faceIndex) -> Vector3, setDirectionToTarget(target) -> Vector3, computeTransformedPosition() -> boolean, transferToEffect(effect, positionUniformName, directionUniformName) -> void, serialize() -> any",
@@ -256,7 +256,7 @@ WUKONG.PREFABS = {
 		},
 		HemisphericLight : {
 			data :{
-				string: "new HemisphericLight(name, direction, scene);",
+				string: "new BABYLON.HemisphericLight(name, direction, scene);",
 				hints : "//HemisphericLight(name, direction, scene)",
 				members : "//Members - direction : Vector3, groundColor : Color3",
 				methods : "//Methods - setDirectionToTarget(target) -> Vector3, getShadowGenerator() -> ShadowGenerator, transferToEffect(effect, directionUniformName, groundColorUniformName) -> void, serialize() -> any",
