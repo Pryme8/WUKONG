@@ -216,9 +216,21 @@ WUKONG.PREFABS = {
 				hints : "//LinesMesh(name, scene, parent, source, doNotCloneChildren)",
 				members : "//Members - color : Color3, material : Material, isPickable : boolean, checkCollisions : boolean",
 				methods : "//Methods - intersects(ray, fastCheck) -> any, dispose(doNotRecurse) -> void, clone(name, newParent, doNotCloneChildren) -> LinesMesh"
-				},
+				},	
 			}
-		}
+		},
+		
+		CreateRibbon : {
+				data :{
+				string: "var ribArray = [[new BABYLON.Vector3(-10, 0, 5), new BABYLON.Vector3(10, 0, 5)],[new BABYLON.Vector3(-10, 0, -5), new BABYLON.Vector3(10, 0, -5)]]; \r\n <BR />"+
+						"BABYLON.Mesh.CreateRibbon('ribbon', ribArray, false, false, 0, scene, false, BABYLON.Mesh.DEFAULTSIDE);",
+				hints : "//Ribbon(id, scene, pathArray, closeArray, closePath, offset, canBeRegenerated, mesh, side)",
+				members : "//Members - pathArray : Vector3[][], closeArray : boolean, closePath : boolean, offset : number, side : number, ",
+				methods : "//Methods - copy(id) -> Geometry"
+				},	
+			}
+		
+		
 		}
 		
 	},
