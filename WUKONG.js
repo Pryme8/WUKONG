@@ -228,6 +228,16 @@ WUKONG.PREFABS = {
 				}
 			}	
 		},		
+	},
+	Lights : {
+		PointLight : {
+			data :{
+				string: "new PointLight(name, position, scene);",
+				hints : "//PointLight(name, position, scene)",
+				members : "//Members - position : Vector3",
+				methods : "//Methods - getAbsolutePosition() -> Vector3, computeTransformedPosition() -> boolean, transferToEffect(effect, positionUniformName) -> void, needCube() -> boolean, supportsVSM() -> boolean, needRefreshPerFrame() -> boolean, getShadowDirection(faceIndex) -> Vector3, setShadowProjectionMatrix(matrix, viewMatrix, renderList) -> void,se rialize() -> any",
+				}
+		},
 	}
 	
 }
