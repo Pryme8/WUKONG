@@ -188,6 +188,14 @@ WUKONG.PREFABS = {
 				members : "//Members - height : number, diameterTop : number, diameterBottom : number, tessellation : number, subdivisions : number, side : number",
 				methods : "//Methods - copy(id) -> Geometry, serialize() -> any, static Parse(parsedCylinder, scene) -> Cylinder"
 				}
+		},
+		CreateTorus : {
+			data :{
+				string: "BABYLON.Mesh.CreateTorus('torus', 5, 1, 10, scene, false, BABYLON.Mesh.DEFAULTSIDE);",
+				hints : "//Torus(id, scene, diameter, thickness, tessellation, canBeRegenerated, mesh, side)",
+				members : "//Members - diameter : number, thickness : number, tessellation : number, side : number",
+				methods : "//Methods - copy(id) -> Geometry, serialize() -> any, static Parse(parsedTorus, scene) -> Torus"
+				}
 		}
 		
 	},
