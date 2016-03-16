@@ -5,7 +5,9 @@
 
 
 WUKONG = function(){
+if(!$('#WUKONG').length){
 this._init();
+}
 };
 
 WUKONG.prototype._init = function(){
