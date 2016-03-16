@@ -183,6 +183,8 @@ WUKONG.PREFABS = {
 }
 
 
+
+
 $(document).ready(function(e) {
-    stupidMonkey = new WUKONG();
+   if(!WU){ WU = new WUKONG();}
 });
