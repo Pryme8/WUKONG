@@ -254,6 +254,14 @@ WUKONG.PREFABS = {
 				methods : "//Methods - getAbsolutePosition() -> Vector3, setShadowProjectionMatrix(matrix, viewMatrix, renderList) -> void, needCube() -> boolean, supportsVSM() -> boolean, needRefreshPerFrame() -> boolean, getShadowDirection(faceIndex) -> Vector3, setDirectionToTarget(target) -> Vector3, computeTransformedPosition() -> boolean, transferToEffect(effect, positionUniformName, directionUniformName) -> void, serialize() -> any",
 				}
 		},
+		HemisphericLight : {
+			data :{
+				string: "new HemisphericLight(name, direction, scene);",
+				hints : "//HemisphericLight(name, direction, scene)",
+				members : "//Members - direction : Vector3, groundColor : Color3",
+				methods : "//Methods - setDirectionToTarget(target) -> Vector3, getShadowGenerator() -> ShadowGenerator, transferToEffect(effect, directionUniformName, groundColorUniformName) -> void, serialize() -> any",
+				}
+		},
 	}
 	
 }
