@@ -203,7 +203,22 @@ WUKONG.PREFABS = {
 				hints : "//TorusKnot(id, scene, radius, tube, radialSegments, tubularSegments, p, q, canBeRegenerated, mesh, side)",
 				members : "//Members - radius : number, tube : number, radialSegments : number, tubularSegments : number, p : number, q : number, side : number",
 				methods : "//Methods - copy(id) -> Geometry, serialize() -> any, static Parse(parsedTorusKnot, scene) -> TorusKnot"
-				}
+				},
+		Lines : {
+			BasicLine : {
+				data :{
+				string: "BABYLON.Mesh.CreateLines('lines', [ \r\n <BR />"+
+    						"new BABYLON.Vector3(-10, 0, 0), \r\n <BR />"+
+   							"new BABYLON.Vector3(10, 0, 0), \r\n <BR />"+
+    						"new BABYLON.Vector3(0, 0, -10), \r\n <BR />"+
+    						"new BABYLON.Vector3(0, 0, 10) \r\n <BR />"+
+							"], scene);",
+				hints : "//LinesMesh(name, scene, parent, source, doNotCloneChildren)",
+				members : "//Members - color : Color3, material : Material, isPickable : boolean, checkCollisions : boolean",
+				methods : "//Methods - intersects(ray, fastCheck) -> any, dispose(doNotRecurse) -> void, clone(name, newParent, doNotCloneChildren) -> LinesMesh"
+				},
+			}
+		}
 		}
 		
 	},
