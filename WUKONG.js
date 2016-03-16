@@ -238,6 +238,14 @@ WUKONG.PREFABS = {
 				methods : "//Methods - getAbsolutePosition() -> Vector3, computeTransformedPosition() -> boolean, transferToEffect(effect, positionUniformName) -> void, needCube() -> boolean, supportsVSM() -> boolean, needRefreshPerFrame() -> boolean, getShadowDirection(faceIndex) -> Vector3, setShadowProjectionMatrix(matrix, viewMatrix, renderList) -> void,se rialize() -> any",
 				}
 		},
+		DirectionalLight : {
+			data :{
+				string: "new DirectionalLight(name, direction, scene);",
+				hints : "//DirectionalLight(name, direction, scene)",
+				members : "//Members - direction : Vector3, position : Vector3, transformedPosition : Vector3, shadowOrthoScale : number, autoUpdateExtends : boolean",
+				methods : "//Methods - getAbsolutePosition() -> Vector3, setDirectionToTarget(target) -> Vector3, setShadowProjectionMatrix(matrix, viewMatrix, renderList) -> void, supportsVSM() -> boolean, needRefreshPerFrame() -> boolean, needCube() -> boolean, getShadowDirection(faceIndex) -> Vector3, computeTransformedPosition() -> boolean, transferToEffect(effect, directionUniformName) -> void, serialize() -> any",
+				}
+		},
 	}
 	
 }
